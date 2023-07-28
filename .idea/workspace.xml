@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e6daae3f-6fd1-416c-8643-a4b744fd30d6" name="Changes" comment="Atualização">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Venda.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Venda.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/VendaTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/VendaTest.kt" afterDir="false" />
@@ -26,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="featureFase2" />
+        <entry key="$PROJECT_DIR$" value="featureFase3" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,7 +70,7 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.VendaTest">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="VendaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modulo8Kotlin" />
       <option name="PACKAGE_NAME" value="" />
@@ -81,11 +80,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VendaTest.testarSeRetornaOValorTotalDoPedido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VendaTest.testValidarEstoqueZerado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modulo8Kotlin" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="VendaTest" />
-      <option name="METHOD_NAME" value="testarSeRetornaOValorTotalDoPedido" />
+      <option name="METHOD_NAME" value="testValidarEstoqueZerado" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VendaTest.testValidarTipoDeFruta_ComFrutasInvalidas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Modulo8Kotlin" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="VendaTest" />
+      <option name="METHOD_NAME" value="testValidarTipoDeFruta_ComFrutasInvalidas" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VendaTest.testValidarTipoDeFruta_ComFrutasValidas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Modulo8Kotlin" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="VendaTest" />
+      <option name="METHOD_NAME" value="testValidarTipoDeFruta_ComFrutasValidas" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -98,24 +117,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VendaTest.testarSeRetornaOValorTotalDoPedidoSemDesconto" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Modulo8Kotlin" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="VendaTest" />
-      <option name="METHOD_NAME" value="testarSeRetornaOValorTotalDoPedidoSemDesconto" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VendaTest" />
         <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="TestNG.VendaTest.testarSeRetornaOValorTotalDoPedidoSemDesconto" />
-        <item itemvalue="JUnit.VendaTest.testarSeRetornaOValorTotalDoPedido" />
+        <item itemvalue="JUnit.VendaTest" />
+        <item itemvalue="JUnit.VendaTest.testValidarEstoqueZerado" />
+        <item itemvalue="JUnit.VendaTest.testValidarTipoDeFruta_ComFrutasInvalidas" />
+        <item itemvalue="JUnit.VendaTest.testValidarTipoDeFruta_ComFrutasValidas" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690509372426</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Atualização">
+      <created>1690547022025</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690547022025</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
