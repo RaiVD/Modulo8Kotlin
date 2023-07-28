@@ -21,6 +21,7 @@ class Venda {
         status = "Finalizado"
         return "Valor total do pedido: R$$totalPedido\n${notificarCliente(status)}"
     }
+
     // ETAPA-2
     fun vendaComDesconto(pedido: List<String>): String {
         validarTipoDeFruta(pedido)
@@ -34,34 +35,39 @@ class Venda {
         status = "Finalizado"
         return "Valor total do pedido: R$$totalPedido\n${notificarCliente(status)}"
     }
+
     // ETAPA-3
     fun notificarCliente(status: String): String {
         return "Status do pedido: $status"
     }
+
     fun validarTipoDeFruta(pedido: List<String>) {
 //        try {
-            for (pedidos in pedido) {
-                if (!pedidos.equals("maça", ignoreCase = true) && !pedidos.equals("laranja", ignoreCase = true)) {
-                    throw IllegalArgumentException("Por favor, digite frutas válidas!")
-                }
+        for (pedidos in pedido) {
+            if (!pedidos.equals("maça", ignoreCase = true) && !pedidos.equals("laranja", ignoreCase = true)) {
+                throw IllegalArgumentException("Por favor, digite frutas válidas!")
             }
+        }
 //        }catch (exception: IllegalArgumentException){
 //            println(exception.message)
 //        }
     }
-    // ETAPA-4
-    fun validarEstoque(pedidos: List<String>) {
-//        try {
-            val macasPedidas = pedidos.count { it.equals("maçã", ignoreCase = true) }
-            val laranjasPedidas = pedidos.count { it.equals("laranja", ignoreCase = true) }
 
-            if (macasPedidas > estoqueMaca || laranjasPedidas > estoqueLaranja) {
-                throw IllegalArgumentException("Desculpe, não temos estoque suficiente para atender ao seu pedido.")
-            }
-            estoqueMaca -= macasPedidas
-            estoqueLaranja -= laranjasPedidas
+    // ETAPA-4
+    fun validarEstoque(pedidos: List<String>): Boolean {
+//        try {
+        val macasPedidas = pedidos.count { it.equals("maçã", ignoreCase = true) }
+        val laranjasPedidas = pedidos.count { it.equals("laranja", ignoreCase = true) }
+
+        if (macasPedidas > estoqueMaca || laranjasPedidas > estoqueLaranja) {
+            throw IllegalArgumentException("Desculpe, não temos estoque suficiente para atender ao seu pedido.")
+        }
+        estoqueMaca -= macasPedidas
+        estoqueLaranja -= laranjasPedidas
+        return true
 //        } catch (exception: IllegalArgumentException) {
 //            println(exception.message)
 //        }
     }
+
 }

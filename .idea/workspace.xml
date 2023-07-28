@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e6daae3f-6fd1-416c-8643-a4b744fd30d6" name="Changes" comment="Atualização">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Venda.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Venda.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/VendaTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/VendaTest.kt" afterDir="false" />
     </list>
@@ -25,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="featureFase3" />
+        <entry key="$PROJECT_DIR$" value="featureFase4" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,7 +69,7 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
-  <component name="RunManager" selected="Kotlin.MainKt">
+  <component name="RunManager" selected="JUnit.VendaTest">
     <configuration name="VendaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modulo8Kotlin" />
       <option name="PACKAGE_NAME" value="" />
@@ -80,31 +79,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VendaTest.testValidarEstoqueZerado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VendaTest.listaDeProdutoVazia" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modulo8Kotlin" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="VendaTest" />
-      <option name="METHOD_NAME" value="testValidarEstoqueZerado" />
+      <option name="METHOD_NAME" value="listaDeProdutoVazia" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VendaTest.testValidarTipoDeFruta_ComFrutasInvalidas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VendaTest.testValidarEstoqueZeradoParaMaça" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modulo8Kotlin" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="VendaTest" />
-      <option name="METHOD_NAME" value="testValidarTipoDeFruta_ComFrutasInvalidas" />
+      <option name="METHOD_NAME" value="testValidarEstoqueZeradoParaMaça" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VendaTest.testValidarTipoDeFruta_ComFrutasValidas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VendaTest.validarEstoqueCompleto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Modulo8Kotlin" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="VendaTest" />
-      <option name="METHOD_NAME" value="testValidarTipoDeFruta_ComFrutasValidas" />
+      <option name="METHOD_NAME" value="validarEstoqueCompleto" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="JUnit.VendaTest" />
-        <item itemvalue="JUnit.VendaTest.testValidarEstoqueZerado" />
-        <item itemvalue="JUnit.VendaTest.testValidarTipoDeFruta_ComFrutasInvalidas" />
-        <item itemvalue="JUnit.VendaTest.testValidarTipoDeFruta_ComFrutasValidas" />
+        <item itemvalue="JUnit.VendaTest.listaDeProdutoVazia" />
+        <item itemvalue="JUnit.VendaTest.validarEstoqueCompleto" />
+        <item itemvalue="JUnit.VendaTest.testValidarEstoqueZeradoParaMaça" />
+        <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690547022025</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Atualização">
+      <created>1690553049524</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690553049524</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,5 +198,8 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Modulo8Kotlin$VendaTest.ic" NAME="VendaTest Coverage Results" MODIFIED="1690552669363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
