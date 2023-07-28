@@ -1,13 +1,16 @@
 fun main() {
     val venda = Venda()
+    val status = venda.status
     println("Bem-vindo(a) ao serviço de compras de frutas!")
-    println("Maçãs custam 60 centavos e laranjas custam 25 centavos.\n")
+    println("Maçãs - R$00,60 | laranjas R$00,25.\n")
 
-    val pedidoSemDesconto = arrayListOf<String>("Maça","Laranja","Maça")
+    println(status)
+    val pedidoSemDesconto = arrayListOf("Maça","Laranja","Maça")
     println("Lista de compra: $pedidoSemDesconto")
     println("${venda.vendaSemDesconto(pedidoSemDesconto)}\n")
 
-    val pedidoComDesconto = arrayListOf<String>("Maça","Laranja","Maça")
+    println(status)
+    val pedidoComDesconto = arrayListOf("Maça","Laranja","Maça")
     println("Lista de compra: $pedidoComDesconto")
     println(venda.vendaComDesconto(pedidoComDesconto))
 }
