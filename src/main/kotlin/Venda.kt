@@ -1,4 +1,7 @@
+
 class Venda{
+    var status: String = "Pendente"
+        private set
     fun vendaSemDesconto(pedido: List<String>): String {
         val precoMaca = 0.60
         val precoLaranja = 0.25
@@ -13,7 +16,8 @@ class Venda{
                 println("Inválido digite.")
             }
         }
-        return "Valor total do pedido: R$$totalPedido"
+        status = "Finalizado"
+        return "Valor total do pedido: R$$totalPedido\n${notificarCliente(status)}"
     }
     fun vendaComDesconto(pedido: List<String>): String {
         val precoMaca = 0.60
@@ -23,12 +27,13 @@ class Venda{
         val quantidadeMacas = pedido.count { it.equals("maça", ignoreCase = true) }
         val quantidadeLaranjas = pedido.count { it.equals("laranja", ignoreCase = true) }
 
-        // Oferta: Compre um e ganhe outro grátis nas maçãs
         totalPedido += (quantidadeMacas / 2 + quantidadeMacas % 2) * precoMaca
-
-        // Oferta: 3 pelo preço de 2 em laranjas
         totalPedido += (quantidadeLaranjas / 3 * 2 + quantidadeLaranjas % 3) * precoLaranja
 
-        return "Valor total do pedido: R$$totalPedido"
+        status = "Finalizado"
+        return "Valor total do pedido: R$$totalPedido\n${notificarCliente(status)}"
+    }
+    private fun notificarCliente(status: String): String {
+         return "Status do pedido: $status"
     }
 }
